@@ -23,7 +23,7 @@
     "typescript": "~4.1.5"
   },
   "scripts": {
-    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "build:style": "tailwind build src/styles/input.css -o src/styles/tailwind.css",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
