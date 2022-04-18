@@ -4,24 +4,16 @@ import bgbehide from "../../assets/background/bg-login.png"
 import bgimg2 from "../../assets/background/bg-loginForm.png"
 
 export const BgBehide = styled.img.attrs({
-    src: `${bgbehide}` })`
-    ${tw`
-    absolute
-    max-w-[1920px]
-    max-h-[1080px]
-    left-1
-    top-0
-    `}
-    filter: blur(10px);
- `;
+  src: `${bgbehide}`
+})`
+  ${tw`absolute w-full inset-0 h-screen`}
+  filter: blur(10px);
+`;
  export const ImgForm = styled.img.attrs({
      src: `${bgimg2}` })`
      ${tw`
-     absolute
-     max-w-[600px]
+     max-w-[488px]
      max-h-[700px]
-     top-[50px]
-     left-[650px]
      rounded-[15px]
     `}
  `;  
@@ -29,59 +21,49 @@ export const BgBehide = styled.img.attrs({
 export const Form = styled.div`
     ${tw`
     absolute
-    w-[1281px]
-    h-[751px]
-    left-[320px]
+    flex
+    items-center
+    justify-around
+    w-[1023px]
+    h-[614px]
     rounded-[15px]
     bg-[#FFFFFF]
     `}
-    top: calc(50% - 751px/2 - 0.5px);
     box-shadow: -5px -20px 200px -5px rgba(0, 0, 0, 0.2), 0px 0px 16px 4px rgba(0, 0, 0, 0.15);
 `;  
 
 export const MainSignIn = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    padding: 0px;
-    position: absolute;
+    padding: 32px 0;
     width: 400px;
-    height: 395px;
-    left: calc(50% - 400px/2 - 324px);
-    top: calc(50% - 395px/2 + 30px);
-
+    height: 100%;
 `;
 export const FieldInput = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 32px 0 0 0;
     position: static;
     width: 400px;
-    height: 293px;
-    left: 0px;
-    top: 0px;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 15px 0px;
+    margin: 15px 0px 0px 0px;
 `
 export const SignInButton = styled.button`
-    position: static;
-    width: 400px;
-    height: 48px;
-    left: 0px;
-    top: 308px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 15px 0px;
-    background: #109D58;
-    opacity: 0.8;
-    border: 1px solid #109D58;
-    box-sizing: border-box;
-    border-radius: 10px;
+  ${tw`w-[400px] h-[48px] left-[0px] top-[308px] my-[15px] static flex-none order-2`}
+  background: #109d58;
+  border: 1px solid #109d58;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color:#fff;
+  transition : opacity 0.15s ease-in-out;
+  &:hover{
+    opacity:.8;
+  }
 `;
 
 export const CreateNow = styled.div`
@@ -94,91 +76,67 @@ export const CreateNow = styled.div`
     order: 2;
     flex-grow: 0;
     margin: 15px 0px;
-    display: inline-block;
+    display: flex;
+    font-size: 15px;
 
 `
 
 export const InputIDStudent = styled.input`
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 15%;
-    bottom: 70%;
     background: rgba(16, 157, 88, 0.1);
     border-radius: 10px;
+    padding:10px;
+    width:100%
 `;
 
 export const InputPassword = styled.input`
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 40%;
-    bottom: 45%;
-    background: rgba(16, 157, 88, 0.1);
-    border-radius: 10px;
+  background: rgba(16, 157, 88, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
 `;
 
 export const ForgotPassword = styled.p`
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 55%;
-    bottom: 10%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 23px;
-    text-align: right;
-    color: #707478;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 15px 0px;
-`
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: right;
+  color: #707478;
+  width:100%;
+  margin: 15px 0 0 0;
+  cursor:pointer;
+`;
 
 export const TextIDStudent = styled.p`
-    position: absolute;
-    left: 0%;
-    right: 79.28%;
-    top: 0%;
-    bottom: 78.76%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #707478;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #707478;
 `;
 
 export const TextPassword = styled.p`
-    position: absolute;
-    left: 0%;
-    right: 79.28%;
-    top: 35%;
-    bottom: 82.35%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #707478;
-`
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #707478;
+`;
 
 export const Welcome = styled.p`
-    position: absolute;
-    width: 335px;
-    height: 100px;
-    left: calc(50% - 400px/2 - 324px);
-    top: 15%;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 50px;
-    color: #109D58;
-`
+  height: 100px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #109d58;
+  text-align: left;
+`;

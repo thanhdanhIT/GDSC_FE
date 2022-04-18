@@ -1,48 +1,38 @@
-import { BgBehide, 
-        Form, 
-        ImgForm,
-        Welcome,
-        MainSignIn,
-        FieldInput,
-        InputIDStudent,
-        InputPassword,
-        TextIDStudent,
-        TextPassword,
-        ForgotPassword,
-        SignInButton,
-        CreateNow,
-} from "./loginForm.style"
+import {
+  BgBehide,
+  Form,
+  ImgForm,
+  Welcome,
+  MainSignIn,
+  FieldInput,
+  InputIDStudent,
+  InputPassword,
+  TextIDStudent,
+  TextPassword,
+  ForgotPassword,
+  SignInButton,
+  CreateNow
+} from './loginForm.style';
 
 function HandleFormLogIn() {
-    return (
-        <div>
-            <BgBehide></BgBehide>
-            <Form>
-                <Welcome>Welcome back!</Welcome>
-
-                <MainSignIn>
-                    <FieldInput>
-                        <TextIDStudent> ID Student</TextIDStudent>
-                        <InputIDStudent/>
-                        <TextPassword> Password</TextPassword>
-                        <InputPassword />
-                        <ForgotPassword>Forgot your password</ForgotPassword>
-                    </FieldInput>  
-
-                    <SignInButton>Sign In </SignInButton>
-
-                    <CreateNow>
-                        <p>Dont't have Account? 
-                            <button className=" pl-2 font-medium text-green-500">
-                                 Create now
-                            </button>
-                        </p>
-                    </CreateNow>
-
-                </MainSignIn>
-                <ImgForm/>
-            </Form>
-        </div>
-    )
+  return (
+    <div className="flex items-center justify-center h-screen">
+      <BgBehide></BgBehide>
+      <Form>
+        <MainSignIn>
+          <Welcome>Chào mừng bạn quay lại!</Welcome>
+          <FieldInput>
+            <TextIDStudent> Mã thành viên*</TextIDStudent>
+            <InputIDStudent />
+            <TextPassword>Mật khẩu*</TextPassword>
+            <InputPassword />
+            <ForgotPassword>Quên mật khẩu?</ForgotPassword>
+          </FieldInput>
+          <SignInButton>Sign In</SignInButton>
+        </MainSignIn>
+        <ImgForm />
+      </Form>
+    </div>
+  );
 }
-export default HandleFormLogIn
+export default HandleFormLogIn;
