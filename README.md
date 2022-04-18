@@ -1,8 +1,8 @@
-## In the project directory, you can run:
- 
 ## To set up the environment for the program, we need you to install the library with the following version:  
 - Node v16.13.2 
 - Yarn v1.22.18 
+
+## In the project directory, you can run:
 
 ## Yarn 
 Install all packages in the project.
