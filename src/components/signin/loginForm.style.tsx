@@ -144,9 +144,7 @@ export const TextIDMember = styled.p`
 `
 
 // Rectangle 4
-export const IDInput = styled.input.attrs(props => ({
-    type: "text",
-  }))` 
+export const IDInput = styled.input` 
   ${tw` 
       static
       left-[0%]
@@ -204,9 +202,7 @@ export const TextPassword = styled.p`
     flex-grow: 0;
 `
 
-export const PasswordInput = styled.input.attrs(props => ({
-    type: "password",
-  }))`
+export const PasswordInput = styled.input`
   ${tw` 
       static
       left-[0%]
