@@ -9,6 +9,7 @@ export const BgBehide = styled.img.attrs({
     fixed 
     w-[auto]
     h-[100vh]
+    left-[2%]
     `}
     filter: blur(10px);
  `;
@@ -36,7 +37,7 @@ export const FormSignIn = styled.div`
     fixed 
     w-[1023px]
     h-[614px]
-    left-[15%]
+    left-[20%]
     top-[10%]
     `}
 `;
