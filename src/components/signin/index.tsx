@@ -29,14 +29,12 @@ interface Account {
 
 function FormLogIn() {
   const { register, handleSubmit, formState: { errors } } = useForm<Account>()
-  const onSubmit: SubmitHandler<Account>  = (data) => {
-      console.log(data)
+  const onSubmit: SubmitHandler<Account>  = (data: Account) => {
+      console.log(JSON.stringify(data))
   }
   const [errorForm, setErrorForm] = useState(false)
   useEffect( () => {
-    if (!errors.username) {
-        setErrorForm(false)
-    } else {
+    if (errors.username) {
         setErrorForm(true)
     }
   })
