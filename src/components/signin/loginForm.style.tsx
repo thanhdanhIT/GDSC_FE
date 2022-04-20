@@ -6,11 +6,9 @@ import bgimg2 from "../../assets/background/bg-loginForm.png"
 export const BgBehide = styled.img.attrs({
     src: `${bgbehide}` })`
     ${tw`
-    absolute
-    w-[1536px]
-    h-[864px]
-    left-0
-    top-0
+    fixed 
+    w-[auto]
+    h-[100vh]
     `}
     filter: blur(10px);
  `;
@@ -26,28 +24,33 @@ export const ImgForm = styled.img.attrs({
      left-[51.32%]
      right-[0.98%]
      rounded-[15px]
+     flex
+     flex-col
+     items-center
     `}
  `;  
 
 //Group 67 
 export const FormSignIn = styled.div` 
     ${tw`
-    absolute
+    fixed 
     w-[1023px]
     h-[614px]
-    left-[257px]
-    top-[125px]
+    left-[15%]
+    top-[10%]
     `}
 `;
 
 // Rectangle 32
 export const Form = styled.div`
     ${tw`
+    flex
+    flex-col
+    items-center
+    justify-items-center
     absolute
-    left-[0%]
-    right-[0%]
-    top-[0%]
-    bottom-[0%]
+    w-[1023px]
+    h-[614px]
     bg-[#FFFFFF]
     rounded-[15px]
     `}
@@ -267,4 +270,45 @@ export const SignInButton = styled.button`
     flex-grow: 0;
     font-family: 'Be Vietnam';
     font-size: 18px;
+`
+// Group 70
+export const FormErrLogIn = styled.div`
+    position: static;
+    width: 434px;
+    height: 79px;
+    margin-bottom: -10px;
+`
+export const TextLogInFailBold = styled.p`
+    position: static;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #707478
+    width: 322px;
+    height: 49px;
+`
+export const TextLogInFailNor = styled.p`
+    position: static;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #707478
+    width: 322px;
+    height: 49px;
+`
+export const ErrLogIn = styled.div`
+    position: static;
+    background: rgba(231, 68, 53, 0.2);
+    border-radius: 10px;
+    width: 434px;
+    height: 78px;
+    margin-top: 15px;
+    padding: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 `
