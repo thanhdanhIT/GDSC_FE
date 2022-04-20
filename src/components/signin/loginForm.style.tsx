@@ -103,7 +103,7 @@ export const Welcome = styled.p`
         leading-[50px]
         text-[#109D58]
     `}
-    font-family: 'Be Vietnam';
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 40px;
 `
 
@@ -142,7 +142,7 @@ export const TextIDMember = styled.p`
         items-center
         order-1
     `}
-    font-family: 'Be Vietnam';
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 14px;
     flex-grow: 0;
 `
@@ -201,7 +201,7 @@ export const TextPassword = styled.p`
         order-1
 
     `}
-    font-family: 'Be Vietnam';
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 14px;
     flex-grow: 0;
 `
@@ -239,11 +239,12 @@ export const ForgotPassword = styled.p`
         leading-[20px]
         text-right
         text-[#707478]
+        text-[16px]
         flex-none
         order-1
         mt-[15px]
     `}
-    font-family: 'Be Vietnam';
+    font-family: 'Be Vietnam Pro', sans-serif;
     flex-grow: 0;
 ` 
 //Login Button
@@ -269,7 +270,7 @@ export const SignInButton = styled.button`
         rounded-[10px]
     `}
     flex-grow: 0;
-    font-family: 'Be Vietnam';
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 18px;
 `
 // Group 70
@@ -281,7 +282,7 @@ export const FormErrLogIn = styled.div`
 `
 export const TextLogInFailBold = styled.p`
     position: static;
-    font-family: 'Be Vietnam';
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -292,7 +293,7 @@ export const TextLogInFailBold = styled.p`
 `
 export const TextLogInFailNor = styled.p`
     position: static;
-    font-family: 'Be Vietnam';
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

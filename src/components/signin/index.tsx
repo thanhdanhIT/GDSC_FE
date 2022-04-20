@@ -19,6 +19,7 @@ import {
   TextLogInFailNor,
   ErrLogIn
 } from "./loginForm.style"
+import Animation from "../AnimationLoading/index"
 import { useEffect, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form"
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -41,9 +42,13 @@ function FormLogIn() {
   const validationOpt = { resolver: yupResolver(formSchema) };
   const { register, handleSubmit, reset, formState } = useForm<FormValues>(validationOpt);
   const { errors } = formState;
-
+  const [isLoading,setIsLoading] = useState(false)
   const onSubmit: SubmitHandler<FormValues> = (data: FormValues) => {
     console.log('data', data);
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    },2000)
   };
   return (
     <div>
@@ -84,6 +89,7 @@ function FormLogIn() {
             </FieldInput>
           </form>
         </MainSignIn>
+        {isLoading&&<Animation/>}
       </FormSignIn>
     </div>
   );
